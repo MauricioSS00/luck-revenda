@@ -1,1 +1,64 @@
-<p>home works!</p>
+<div class="p-grid">
+    <div class="p-sm-12 p-md-6 p-lg-6 p-fluid">
+        <p-divider align="left">
+            <div class="p-d-inline-flex p-ai-center">
+                <b>Novidades</b>
+            </div>
+        </p-divider>
+        <p-carousel [value]="motos" [numVisible]="1" [numScroll]="1" [circular]="false">
+            <ng-template let-moto pTemplate="item">
+                <div class="product-item">
+                    <div class="product-item-content">
+                        <div class="p-mb-3">
+                            <img src="{{moto.imagem}}" [alt]="moto.nome" class="product-image">
+                        </div>
+                        <div>
+                            <h4 class="p-mb-1">{{moto.nome}}</h4>
+                            <h6 class="p-mt-0 p-mb-3">R${{moto.valor}}</h6>
+                            <div class="car-buttons p-mt-5">
+                                <p-button type="button" styleClass="p-button p-button-rounded p-mr-2"
+                                    icon="pi pi-search"></p-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+    <div class="p-sm-12 p-md-6 p-lg-6 p-fluid">
+        <p-divider align="left">
+            <div class="p-d-inline-flex p-ai-center">
+                <b>Buscar</b>
+            </div>
+        </p-divider>
+        <div class="p-grid">
+            <div class="p-col-12 p-fluid">
+                <label>Marca</label>
+                <p-dropdown [options]="marcas" placeholder="Selecione..."></p-dropdown>
+            </div>
+            <div class="p-col-12 p-fluid">
+                <label>Modelo</label>
+                <p-dropdown [options]="marcas" placeholder="Selecione..."></p-dropdown>
+            </div>
+            <div class="p-col-6 p-fluid">
+                <label>Ano Inicial</label>
+                <p-dropdown [options]="marcas" placeholder="Selecione..."></p-dropdown>
+            </div>
+            <div class="p-col-6 p-fluid">
+                <label>Ano Final</label>
+                <p-dropdown [options]="marcas" placeholder="Selecione..."></p-dropdown>
+            </div>
+            <div class="p-col-6 p-fluid">
+                <label>Valor Inicial</label>
+                <input pInputText type="text" currencyMask>
+            </div>
+            <div class="p-col-6 p-fluid">
+                <label>Valor Final</label>
+                <input pInputText type="text" currencyMask>
+            </div>
+            <div class="p-col-12 p-fluid">
+                <button pButton type="button" label="Pesquisar"></button>
+            </div>
+        </div>
+    </div>
+</div>

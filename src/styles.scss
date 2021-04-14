@@ -1,1 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+.ocultar-mobile {
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+.p-d-inline-flex {
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 576px) {
+    .p-col {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+    }
+
+    .p-sm-1,
+    .p-sm-2,
+    .p-sm-3,
+    .p-sm-4,
+    .p-sm-5,
+    .p-sm-6,
+    .p-sm-7,
+    .p-sm-8,
+    .p-sm-9,
+    .p-sm-10,
+    .p-sm-11,
+    .p-sm-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+
+    .p-sm-1 {
+        width: 8.3333%;
+    }
+
+    .p-sm-2 {
+        width: 16.6667%;
+    }
+
+    .p-sm-3 {
+        width: 25%;
+    }
+
+    .p-sm-4 {
+        width: 33.3333%;
+    }
+
+    .p-sm-5 {
+        width: 41.6667%;
+    }
+
+    .p-sm-6 {
+        width: 50%;
+    }
+
+    .p-sm-7 {
+        width: 58.3333%;
+    }
+
+    .p-sm-8 {
+        width: 66.6667%;
+    }
+
+    .p-sm-9 {
+        width: 75%;
+    }
+
+    .p-sm-10 {
+        width: 83.3333%;
+    }
+
+    .p-sm-11 {
+        width: 91.6667%;
+    }
+
+    .p-sm-12 {
+        width: 100%;
+    }
+
+    .p-sm-offset-12 {
+        margin-left: 100%;
+    }
+
+    .p-sm-offset-11 {
+        margin-left: 91.66666667%;
+    }
+
+    .p-sm-offset-10 {
+        margin-left: 83.33333333%;
+    }
+
+    .p-sm-offset-9 {
+        margin-left: 75%;
+    }
+
+    .p-sm-offset-8 {
+        margin-left: 66.66666667%;
+    }
+
+    .p-sm-offset-7 {
+        margin-left: 58.33333333%;
+    }
+
+    .p-sm-offset-6 {
+        margin-left: 50%;
+    }
+
+    .p-sm-offset-5 {
+        margin-left: 41.66666667%;
+    }
+
+    .p-sm-offset-4 {
+        margin-left: 33.33333333%;
+    }
+
+    .p-sm-offset-3 {
+        margin-left: 25%;
+    }
+
+    .p-sm-offset-2 {
+        margin-left: 16.66666667%;
+    }
+
+    .p-sm-offset-1 {
+        margin-left: 8.33333333%;
+    }
+
+    .p-sm-offset-0 {
+        margin-left: 0%;
+    }
+}
+
+.formulario {
+    margin: 0;
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 0px 0px 3px 3px;
+}
+
+body a {
+    font-weight: bold;
+}

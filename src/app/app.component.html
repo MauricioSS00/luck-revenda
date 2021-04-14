@@ -1,6 +1,7 @@
-<p-menubar [model]="items">
-    <ng-template pTemplate="start">
-        <img src="assets/images/logo.png" height="40" class="p-mr-2">
-    </ng-template>
-</p-menubar>
+<p-toolbar styleClass="ocultar-mobile">
+    <div class="p-toolbar-group-left">
+        <img src="assets/luck.svg" height="40" class="p-mr-2">
+    </div>
+</p-toolbar>
+<p-menubar [model]="items"></p-menubar>
 <router-outlet></router-outlet>

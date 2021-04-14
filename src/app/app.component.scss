@@ -1,0 +1,17 @@
+::ng-deep body {
+    margin: 0;
+}
+
+::ng-deep .p-menubar {
+    border-radius: 0;
+}
+
+::ng-deep .p-toolbar {
+    border-radius: 0;
+    background: #efefef;
+    border: 0;
+}
+
+::ng-deep .p-grid {
+    margin: 0;
+}
